@@ -1,0 +1,101 @@
+/*
+ * Carousel CSS
+ * Version 2.0
+ * Author: xavier_bs
+ * Website: murviel-info.com
+ * Licence: Free 
+ *
+*/
+.carousel, .carousel *, .carousel::before, .carousel::after {
+   user-select: none;
+   -webkit-user-select: none;
+   box-sizing: border-box;
+}
+.carousel {
+   margin: 16px 10px;
+   overflow: hidden;
+   padding:0;
+}
+.carousel article {
+   position: relative;
+   overflow: hidden;
+   padding: 0;
+}
+.carousel > .overview_carousel {
+   display: flex;
+   align-items: center;
+   margin: 0;
+   padding: 0;
+   width: 20000px;
+}
+.carousel article img {
+   height: 150px;
+   visibility: hidden;
+   display: block;
+   transition: transform 0.2s ease-out;
+}
+.carousel article .content_carousel {
+   visibility: hidden;
+   opacity: 0;
+   width: 100%;
+   transition: opacity 1s ease;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   padding: 16px;
+   font-size: 140%;
+   text-align: center;
+}
+.carousel article .content_carousel a {
+   color: transparent;
+}
+.carousel article::before {
+   visibility: 0;
+   opacity: 0;
+   transition: opacity 1s ease;
+   content: "";
+   position: absolute;
+   z-index: 10;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0,0,0,0.6);
+}
+.carousel article:hover::before {
+   opacity: 1;
+}
+.carousel article:hover img {
+   transform: scale(1.2);
+}
+.carousel article:hover .content_carousel {
+   visibility: visible;
+   opacity: 1;
+}
+
+.carousel article:hover .content_carousel,
+.carousel article:hover .content_carousel a {
+   color: #FFFFFF;
+   text-decoration: none;
+   z-index: 12;
+}
+
+.carousel .xbsDots {
+   text-align:center;
+   /* margin-top: 0.4rem; */
+   height: 1rem;
+}
+.carousel .xbsDots span {
+   background: rgb(255, 255, 255);
+   box-shadow: 2px 2px 4px rgba(102, 102, 102, 0.22), inset 2px 2px 3px #808080;
+   border-radius: 6px;
+   display: inline-block;
+   height: 10px;
+   width: 10px;
+   margin-left: 10px;
+   border: 1px solid #ffffff;
+}
+.carousel .xbsDots span.active {
+   background-color: powderblue;
+}
+.loader_carousel {
+   background: url("fb-loader.gif") no-repeat center;
+}

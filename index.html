@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Test Carousel</title>
+   <link rel="stylesheet" type="text/css" href="carousel.css">
+</head>
+<body>
+   
+
+<section class="carousel">
+   <div class="overview_carousel">
+      <article class="loader_carousel">
+          <img src="http://murviel-info-beziers.com/wp-content/uploads/2017/05/login-wp-new.jpg" />
+         <div class="content_carousel"><a href="http://murviel-info-beziers.com/page-de-connexionlogin-personnalisee-wordpress/">Page de connexion(login) personnalisée &#124; wordPress</a></div>
+      </article>
+      <article class="loader_carousel">
+         <img src="http://murviel-info-beziers.com/wp-content/uploads/2017/04/curl-dom-utf-8.jpg" />
+         <div class="content_carousel"><a href="http://murviel-info-beziers.com/curl-domelement-utf-8/">cURL, DOMElement et UTF-8</a></div>
+      </article>
+      <article class="loader_carousel">
+         <img src="http://murviel-info-beziers.com/wp-content/uploads/2017/04/insert-tags-textarea.jpg" />
+         <div class="content_carousel"><a href="http://murviel-info-beziers.com/bouton-inserer-textarea/">Bouton pour insérer des tags HTML dans un &#060;textarea&gt;</a></div>
+      </article>
+      <article class="loader_carousel">
+         <img src="http://murviel-info-beziers.com/wp-content/uploads/2017/04/accented_chars.jpg" />
+         <div class="content_carousel"><a href="http://murviel-info-beziers.com/fonction-php-supprimer-accents/">Fonction PHP pour supprimer les accents</a></div>
+      </article>
+      <article class="loader_carousel">
+         <img src="http://murviel-info-beziers.com/wp-content/uploads/2017/03/ajax-php-jquery.jpg" />
+         <div class="content_carousel"><a href="http://murviel-info-beziers.com/php-jquery-ajax-one-file/">PHP, jQuery et aJax dans un seul fichier</a></div>
+      </article>
+      <article class="loader_carousel">
+         <img src="http://murviel-info-beziers.com/wp-content/uploads/2017/03/paypal_button_2.jpg" />
+         <div class="content_carousel"><a href="http://murviel-info-beziers.com/bouton-paypal-personnalise/">Boutons Paypal personnalisés</a></div>
+      </article>
+      <article class="loader_carousel">
+         <img src="http://murviel-info-beziers.com/wp-content/uploads/2017/03/nginx-virtual-host.jpg" />
+         <div class="content_carousel"><a href="http://murviel-info-beziers.com/virtual-host-nginx-php-fpm-ubuntu/">Configurer un virtual host Nginx et php-fpm sous Ubuntu</a></div>
+      </article>
+      <article class="loader_carousel">
+         <img src="http://murviel-info-beziers.com/wp-content/uploads/2017/03/animateCSS-1.jpg" />
+         <div class="content_carousel"><a href="http://murviel-info-beziers.com/animatecss-plugin-jquery/">AnimateCSS : plugin pour jQuery</a></div>
+      </article>
+      <article class="loader_carousel">
+         <img src="http://murviel-info-beziers.com/wp-content/uploads/2017/03/iframe_2.jpg" />
+         <div class="content_carousel"><a href="http://murviel-info-beziers.com/positionner-contenu-iframe/">Positionner le contenu d’une iframe</a></div>
+      </article>
+      <article class="loader_carousel">
+         <img src="http://murviel-info-beziers.com/wp-content/uploads/2017/03/letsencrypt-with-nginx.jpg" />
+         <div class="content_carousel"><a href="http://murviel-info-beziers.com/ssl-avec-lets-encrypt-et-nginx/">SSL avec Let’s Encrypt et Nginx sur Ubuntu 16.04.2 LTS</a></div>
+      </article>
+      <article class="loader_carousel">
+         <img src="http://murviel-info-beziers.com/wp-content/uploads/2017/03/smooth_scrolling.jpg" />
+         <div class="content_carousel"><a href="http://murviel-info-beziers.com/smooth-scrolling-defilement-doux/">Smooth scrolling &#8211; Défilement doux</a></div>
+      </article>
+      <article class="loader_carousel">
+         <img src="http://murviel-info-beziers.com/wp-content/uploads/2017/02/domain-nginx.jpg" />
+         <div class="content_carousel"><a href="http://murviel-info-beziers.com/domain-wordpress-nginx/">Changer le domaine d&#8217;un site wordPress sous serveur NGINX</a></div>
+      </article>
+   </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenLite.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/CSSPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/easing/EasePack.min.js"></script>
+<script src="modernizr.touchEvents.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-touch-events/1.0.9/jquery.mobile-events.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js"></script>
+<script src="carousel.js"></script>
+<script>
+$( document ).ready( function() {
+
+   $( '.carousel' ).xbsCarousel({
+      diapoDuration: 6000,
+   });
+
+});
+</script>
+</body>
+</html>
